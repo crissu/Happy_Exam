@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_bac"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edt_userid"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="50dp"
+            android:text="考研利器"
+            android:textColor="@color/colorWhite_2"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edt_userid"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#2000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="用户名"
+            android:textColor="@color/colorWhite_2"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/jiange"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/edt_userid"></RelativeLayout>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/jiange"
+            android:background="#2000"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="密码"
+            android:textColor="@color/colorWhite_2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edt_password"
+            android:paddingTop="10dp"
+            android:text="注册账号"
+            android:textColor="@color/colorWhite_2" />
+
+        <TextView
+            android:id="@+id/tv_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/edt_password"
+            android:paddingTop="10dp"
+            android:text="忘记密码"
+            android:textColor="@color/colorWhite_2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_find_password"
+            android:paddingTop="40dp">
+
+            <Button
+                android:id="@+id/btn_signin_up"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#8000"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/colorWhite_2" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"></RelativeLayout>
+
+</LinearLayout>
